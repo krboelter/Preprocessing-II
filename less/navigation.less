@@ -4,30 +4,65 @@
     margin: 30px auto;
     width: 800px;
 
+    @media @mobile{
+        width: 100%;
+    }
+
     .nav-header{
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
         border-width: 100%;
-    }
 
-    a{
-        .navbar(2rem);
+        @media @mobile{
+            flex-direction: column;
+            text-align: center;
+        }
 
-        @media{
-            font-size: 4rem;
+        h1{
+            @media @mobile{
+                margin-bottom: 20px;
+            }
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+
+            a{
+                .navbar(2rem);
+            }
         }
     }
 
+
 }
 
-.fun-bus{
-    display: block;
+.bus-border{
     border-top: 2px dashed lightgray;
-    border-width: 100%;
+    
+    .fun-bus{
+        display: block;
+        width: 800px;
+        margin: 0 auto;
+    
+        @media @mobile{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
 }
+
 
 .header-text{
     padding: 20px 0;
+    width: 800px;
+    margin: 0 auto;
     border-bottom: 2px dashed lightgray;
+
+    @media @mobile{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
+

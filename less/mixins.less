@@ -1,1 +1,20 @@
-// Mixins in here
+.navbar(@font-size){
+    text-decoration: none;
+    color: @font-color;
+    font-size: @font-size;
+    padding: 10px 20px;
+}
+
+.button(@color, @button-padding, @radius){
+    background-color: @color;
+    padding: @button-padding;
+    border-radius: @radius;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    @media @mobile{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
